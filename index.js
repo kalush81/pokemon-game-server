@@ -1,7 +1,7 @@
 const express = require('express');
 // const corsMiddleware =  require('cors');
 
-// const userRouter = require('./user/router');
+const playerRouter = require('./player/router');
 // const imageRouter = require('./image/router');
 // const authRouter = require('./auth/router');
 
@@ -14,7 +14,7 @@ const app = express();
 
 // app.use(corsMiddleware());
 // app.use(jsonParser);
-// app.use(userRouter);
+app.use(playerRouter);
 // app.use(authRouter);
 // app.use(imageRouter);
 
